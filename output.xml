@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221123 18:05:12.276" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\ROBOCORP\2 level\tasks.robot">
+<test id="s1-t1" name="Open Browser" line="13">
+<status status="FAIL" starttime="20221123 18:05:14.874" endtime="20221123 18:05:14.876">Task contains no keywords.</status>
+</test>
+<doc>Orders robots from RobotSpareBin Industries Inc.
+Saves the order HTML receipt as a PDF file.
+Saves the screenshot of the ordered robot.
+Embeds the screenshot of the robot to the PDF receipt.
+Creates ZIP archive of the receipts and the images.</doc>
+<status status="FAIL" starttime="20221123 18:05:12.284" endtime="20221123 18:05:14.878"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
