@@ -48,9 +48,8 @@ Create Env
     Wait Until Removed    ${Output}
     Create Directory    ${Output}
 Open Browser
-    #${page}=    Get Secret    page
-    Open Available Browser    https://robotsparebinindustries.com/#/robot-order    
-    #Open Available Browser    ${page}[url]    maximized=True
+    ${page}=    Get Secret    page
+    Open Available Browser    ${page}[url]    maximized=True
 Order Your Robot
     Click Button    OK
 Get Documents
@@ -71,7 +70,6 @@ Fill The Form
     [Arguments]    ${row}
     Select From List By Index    head       ${row}[Head]
     Click Button    id-body-${row}[Body]
-    #${test}=    Execute Javascript   document.querySelector('#root').querySelectorAll('form')[0][7].getAttribute('id');   
     Input Text    address    ${row}[Address]
     Input Text    class:form-control    ${row}[Legs]  
     Click Button    preview
